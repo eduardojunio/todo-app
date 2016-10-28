@@ -1,0 +1,24 @@
+{
+  "name": "todo-app",
+  "version": "0.0.0",
+  "description": "A simple online To-do App",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eduardo Júnio Santos Macêdo",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "pug": "^2.0.0-beta6"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "gulp": "^3.9.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-nodemon": "^2.2.1",
+    "mocha": "^3.1.2",
+    "supertest": "^2.0.1"
+  }
+}
