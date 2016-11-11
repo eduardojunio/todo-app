@@ -11,20 +11,21 @@ block main
 block todos
   h2 My To-do List
   table.table.table-hover
-    tr
-      td #12
-      td.todo(data-id='12') Check my inbox
-      td.edit-todo(data-id="12")
-        .input-group
-          input.form-control(type='text' value='Check my inbox' placeholder='Buy milk...')
-      td
-        a.done(href='#' title='Done' data-id='12')
-          span.glyphicon.glyphicon-ok(aria-hidden='true')
-        a.done-editing(href='#' title='Done editing' data-id='12')
-          span.glyphicon.glyphicon-ok(aria-hidden='true')
-        a.edit(href='#' title='Edit' data-id='12')
-          span.glyphicon.glyphicon-pencil(aria-hidden='true')
-        a.remove(href='#' title='Remove' data-id='12')
-          span.glyphicon.glyphicon-remove(aria-hidden='true')
-        a.cancel(href='#' title='Cancel' data-id='12')
-          span.glyphicon.glyphicon-remove(aria-hidden='true')
+    each task in tasks
+      tr
+        td #12
+        td.todo(data-id='12')= task.task
+        td.edit-todo(data-id="12")
+          .input-group
+            input.form-control(type='text' value='Check my inbox' placeholder='Buy milk...')
+        td
+          a.done(href='#' title='Done' data-id='12')
+            span.glyphicon.glyphicon-ok(aria-hidden='true')
+          a.done-editing(href='#' title='Done editing' data-id='12')
+            span.glyphicon.glyphicon-ok(aria-hidden='true')
+          a.edit(href='#' title='Edit' data-id='12')
+            span.glyphicon.glyphicon-pencil(aria-hidden='true')
+          a.remove(href='#' title='Remove' data-id='12')
+            span.glyphicon.glyphicon-remove(aria-hidden='true')
+          a.cancel(href='#' title='Cancel' data-id='12')
+            span.glyphicon.glyphicon-remove(aria-hidden='true')

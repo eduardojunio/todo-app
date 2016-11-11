@@ -9,8 +9,10 @@
   "author": "Eduardo Júnio Santos Macêdo",
   "license": "MIT",
   "dependencies": {
+    "bluebird": "^3.4.6",
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
+    "mongoose": "^4.6.7",
     "pug": "^2.0.0-beta6"
   },
   "devDependencies": {
